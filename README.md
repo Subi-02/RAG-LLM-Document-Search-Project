@@ -32,23 +32,23 @@ Document question answering
 
 **Architecture:**
 
-Document Sources (PDF/DOCX)
+    Document Sources (PDF/DOCX)
         │
         ▼
         
-   Document Loader
+      Document Loader
         │
         ▼
         
-   Text Chunking
+      Text Chunking
         │
         ▼
         
- Embeddings Generation (SentenceTransformer)
+     Embeddings Generation (SentenceTransformer)
         │
         ▼
         
-    FAISS Vector Store
+      FAISS Vector Store
         │
         ▼
         
@@ -65,6 +65,7 @@ Document Sources (PDF/DOCX)
 **Project Structure:**
 
 rag/
+
 ├── docs/                  # Folder containing PDFs/DOCX documents
 
 ├── ingest.py              # Document ingestion & embedding creation
