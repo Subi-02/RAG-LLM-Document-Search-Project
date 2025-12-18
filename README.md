@@ -6,7 +6,7 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) system that all
 Key Idea:
 Instead of feeding the entire document collection to an LLM, the system first retrieves relevant chunks using embeddings and a vector database (FAISS), then generates answers only from the retrieved context. This improves efficiency, accuracy, and scalability.
 
-Applications:
+**Applications:**
 
 Enterprise knowledge management
 
@@ -16,7 +16,7 @@ Back-office automation with NLP
 
 Document question answering
 
-Features
+**Features:**
 
 ✅ Ingest PDF and DOCX documents
 
@@ -30,7 +30,7 @@ Features
 
 ✅ Context-aware answer generation using local or cloud-based LLMs
 
-Architecture:
+**Architecture:**
 
 Document Sources (PDF/DOCX)
         │
@@ -55,7 +55,7 @@ User Query ──► Query Embedding ──► Top-k Retrieval ──► Context
         ▼
    Generated Answer
 
-Project Structure:
+**Project Structure:**
 
 rag/
 ├── docs/                  # Folder containing PDFs/DOCX documents
@@ -120,31 +120,48 @@ Your question: Who is Alice in Alice in Wonderland?
 
 
 **Workflow:**
+
 Embed the query using SentenceTransformer
+
 Retrieve top-k most relevant document chunks from FAISS
+
 Send the context and query to the LLM
+
 Generate and display the answer
+
 Type exit to quit.
 
 **Dependencies:**
+
 Python 3.12+
+
 FAISS
  – Vector similarity search
+ 
 LangChain
  – LLM orchestration
+ 
 OpenAI API
  – Optional LLM/embedding
+ 
 Sentence Transformers
  – Embedding generation
+ 
 Ollama
  – Local LLM integration (optional)
 
 Additional packages: PyPDF2, python-docx, tiktoken, numpy, pickle
 
 **Future Enhancements:**
+
 Support more document formats (TXT, HTML, Markdown)
+
 Batch query processing
+
 Web interface with Flask / FastAPI
+
 Online updates to FAISS index for new documents
+
 Domain-specific embeddings fine-tuning
+
 Multi-language support for documents and queries
