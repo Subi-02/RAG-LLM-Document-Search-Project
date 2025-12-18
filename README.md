@@ -30,7 +30,8 @@ Features
 
 ✅ Context-aware answer generation using local or cloud-based LLMs
 
-Architecture
+Architecture:
+
 Document Sources (PDF/DOCX)
         │
         ▼
@@ -54,7 +55,8 @@ User Query ──► Query Embedding ──► Top-k Retrieval ──► Context
         ▼
    Generated Answer
 
-Project Structure
+Project Structure:
+
 rag/
 ├── docs/                  # Folder containing PDFs/DOCX documents
 ├── ingest.py              # Document ingestion & embedding creation
@@ -64,7 +66,9 @@ rag/
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 
-Setup Instructions
+
+Setup Instructions:
+
 1️⃣ Clone the repository
 git clone <your-repo-url>
 cd rag
@@ -115,49 +119,32 @@ Example Query:
 Your question: Who is Alice in Alice in Wonderland?
 
 
-Workflow:
-
+**Workflow:**
 Embed the query using SentenceTransformer
-
 Retrieve top-k most relevant document chunks from FAISS
-
 Send the context and query to the LLM
-
 Generate and display the answer
-
 Type exit to quit.
 
-Dependencies
-
+**Dependencies:**
 Python 3.12+
-
 FAISS
  – Vector similarity search
-
 LangChain
  – LLM orchestration
-
 OpenAI API
  – Optional LLM/embedding
-
 Sentence Transformers
  – Embedding generation
-
 Ollama
  – Local LLM integration (optional)
 
 Additional packages: PyPDF2, python-docx, tiktoken, numpy, pickle
 
-Future Enhancements
-
+**Future Enhancements:**
 Support more document formats (TXT, HTML, Markdown)
-
 Batch query processing
-
 Web interface with Flask / FastAPI
-
 Online updates to FAISS index for new documents
-
 Domain-specific embeddings fine-tuning
-
 Multi-language support for documents and queries
