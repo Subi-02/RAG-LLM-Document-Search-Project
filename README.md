@@ -52,7 +52,7 @@ Document Sources (PDF/DOCX)
         │
         ▼
         
-User Query ──► Query Embedding ──► Top-k Retrieval ──► Context
+    User Query ──► Query Embedding ──► Top-k Retrieval ──► Context
         │
         ▼
         
@@ -60,7 +60,7 @@ User Query ──► Query Embedding ──► Top-k Retrieval ──► Context
         │
         ▼
         
-   Generated Answer
+    Generated Answer
 
 **Project Structure:**
 
